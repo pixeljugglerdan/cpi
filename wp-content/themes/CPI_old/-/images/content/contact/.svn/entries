@@ -1,0 +1,70 @@
+8
+
+dir
+6
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production/CPI/trunk/-/images/content/contact
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production
+
+
+
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b60a6a70-d44e-4892-b2e8-1d4206063eea
+
+wilton.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+ea5151a0f10e34b2bad19bcca0430a9c
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+
+petec.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+5b4aac1074b0e39b1994542d2d2a137d
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+
+newcastleuni.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+0887f0e33b439af4adbf377a92f5c03f
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+
+_notes
+dir
+

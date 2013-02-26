@@ -1,0 +1,210 @@
+#slider {
+  width: 981px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.scroll {
+  height: 520px;
+  overflow: auto;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+  background: @white url(images/content_pane-gradient.gif) repeat-x scroll left bottom;
+}
+
+.scrollContainer div.panel {
+  height: 520px;
+    width: 981px;
+  }
+  
+.panel-container {
+	width: 951px;
+	padding: 25px 15px;
+	font-size: 12px;
+  	line-height: 17px;
+}  
+
+#slider p {
+	margin-bottom: 8px;
+}
+.panel-container h2 {
+	margin-bottom: 20px;
+	margin-left: 10px;
+		margin-top: 10px;
+		line-height: 0;
+}
+h2.reportHeader {
+	margin-bottom: 20px;
+	margin-top: 2px;
+	line-height: 24px;
+}
+.panel-container.columnoverlay h2 {
+	margin-left: 0px;
+}
+.panel-container ul {
+	list-style-position: inside;
+}
+
+.columnthree {
+	width: 293px;
+	float: left;
+	padding: 0 10px 0 10px;
+}
+.columnsmall {
+	width: 280px;
+	float: left;
+	padding: 0 10px 0 10px;
+}
+.columnbig {
+	width: 550px;
+	float: right;
+	padding: 0 10px 0 10px;
+}
+.columnwide {
+	width: 810px;
+	float: left;
+	padding: 0 10px 0 10px;
+}
+.columnoverlay{
+	width: 300px;
+	float: left;
+	padding: 20px;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: @white;
+}
+.columnequal {
+	width: 405px;
+	float: left;
+	margin-right: 40px;
+	padding: 0 10px 0 10px;
+}
+.ent-logo {
+	margin-right: 20px;
+	margin-bottom: 100px;
+	float: left;
+}
+.ent-logo-poly {
+	margin-right: 20px;
+	margin-bottom: 210px;
+	float: left;
+}
+
+.blue-panel {
+	background: #004386;
+	color: @white;
+}
+.front-page-panel {
+	background: url("@{content_url}/annual-report/front-page.png") top left no-repeat;
+}
+
+.ib-panel {
+	background: url("@{content_url}/annual-report/ib-background.png") top left no-repeat;
+}
+.tt-panel {
+	background: url("@{content_url}/annual-report/tt-background.png") top left no-repeat;
+}
+.pe-panel {
+	background: url("@{content_url}/annual-report/pe-background.png") top left no-repeat;
+}
+.pe-panel-two {
+	background: url("@{content_url}/annual-report/pe-background-two.png") top left no-repeat;
+}
+.ad-panel {
+	background: url("@{content_url}/annual-report/ad-background.jpg") top left no-repeat;
+}
+.bs-panel {
+	background: url("@{content_url}/annual-report/bs-background.jpg") top left no-repeat;
+}
+.tic-panel {
+	background: url("@{content_url}/annual-report/tic-background.jpg") top right no-repeat;
+}
+#start-to-read a {
+	background: #DD6A07;
+	padding: 0px 30px;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	color: @white;
+}
+#start-to-read a:hover {
+	background: #0077AA;
+}
+
+
+.columnsmall blockquote, .columnoverlay blockquote {
+	color: #004386;
+	margin-top: 10px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	line-height: 20px;
+	font-style: italic;
+	font-size: 18px;
+	background: @white url("@{base_url}/quotes-bg.png") left top no-repeat;	
+}
+
+.casestudyspace {
+	margin-bottom: 20px;
+}
+.casestudyspace img {
+	margin-bottom: 20px;
+}
+
+
+ul.scroll-page-no {
+    list-style: none;
+    margin: 20px 0 0 0; 
+    float: right;   
+}
+
+ul.scroll-page-no li {
+    display: inline;
+    padding: 0;      
+}
+
+ul.scroll-page-no a {
+	display: block;
+	float: left;
+	margin: 4px 3px 4px 0;
+	padding: 0px 5px;
+	text-decoration:none;
+	width: auto;
+	background: #0077AA;
+	color: @white;
+	font-size: 14px;
+	.radius;
+}
+
+ul.scroll-page-no a:hover {
+}
+
+ul.scroll-page-no a.selected {
+    background: none;
+    color: #0077AA;
+}
+
+ul.scroll-page-no a:focus {
+    outline: none;
+}
+
+
+
+
+.scrollButtons {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+
+.scrollButtons.left {
+  right: 60px;
+  z-index: 20;
+}
+
+.scrollButtons.right {
+  right: 0px;
+}			
+

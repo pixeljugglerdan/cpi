@@ -1,0 +1,87 @@
+8
+
+dir
+6
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production/CPI/trunk/-/images/content
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production
+
+
+
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b60a6a70-d44e-4892-b2e8-1d4206063eea
+
+case-study
+dir
+
+careers
+dir
+
+business-support
+dir
+
+markets
+dir
+
+press-room
+dir
+
+_notes
+dir
+
+annual-report
+dir
+
+printable-electronics
+dir
+
+about
+dir
+
+contact
+dir
+
+news
+dir
+
+virtual-tour-susproc.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+2fcca5859984d05dccbe031004d252ff
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+
+electronics.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+cb01ebe320ac12126bbc210d077c11cc
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+

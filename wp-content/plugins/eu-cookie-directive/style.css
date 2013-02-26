@@ -1,0 +1,65 @@
+body{
+	position: relative;
+}
+
+#ecd_opt_in_banner
+{	
+	height: auto;
+	width: 100%;
+	z-index: 99999;
+	background-color: #3B3B3B;
+	color: #EEE;
+	overflow: auto;
+	padding-bottom: 40px;
+
+}
+#ecd_opt_in_banner a { color: #DC4D00; border-bottom: 1px dotted #DC4D00;}
+#ecd_opt_in_banner a:hover { color: #FFF; border-bottom: 1px solid #fff; padding-bottom: 1px; }
+#ecd_message { width:70%;margin:0 auto; }
+#ecd_message h3 {font-weight: 600;}
+#ecd_message p { float: left; width: 60%; }
+#ecd_message form { float: right; width: 30%;}
+
+#ecd_opt_in_banner div{ padding: 15px; }
+
+#ecd_opt_in_banner label
+{
+	vertical-align: middle;
+	float: left;
+	color: #EEE;
+}
+
+#ecd_opt_in_banner input[type=checkbox]
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#ecd_opt_in_banner input[type=submit]
+{
+	margin: -4px 0px 0px 8px;
+	padding: 0px;
+}
+
+#ecd_opt_in_banner p
+{
+	
+}
+
+#ecd-cookie-table
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#ecd-cookie-table th
+{
+	text-align: left;
+}
+
+#ecd-cookie-table th,
+#ecd-cookie-table td
+{
+	padding: 10px;
+	font-size: 15px;
+}

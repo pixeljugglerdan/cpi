@@ -1,0 +1,41 @@
+8
+
+dir
+6
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production/CPI/trunk/-/images/content/news
+svn+ssh://uk-cpi.com@s129224.gridserver.com/home/129224/data/svn/ukcpi_production
+
+
+
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b60a6a70-d44e-4892-b2e8-1d4206063eea
+
+news-petec.png
+file
+
+
+
+
+2011-09-07T09:39:54.000000Z
+10ad033f266f077662d038047a9b3cd3
+2011-09-07T09:34:50.014382Z
+6
+uk-cpi.com
+has-props
+
