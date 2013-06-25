@@ -18,7 +18,7 @@
 
 		<div class="aside-box">
 		<h3>
-			<a class="" data-toggle="modal" href="#newsModal">
+			<a class="" href="<?php bloginfo('url'); ?>/cpi-newsletter/">
 				<i class="icon-envelope-alt"></i> Sign up for our Newsletter &#187;
 			</a>
 		</h3>

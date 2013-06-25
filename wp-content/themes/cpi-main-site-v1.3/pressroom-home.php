@@ -47,7 +47,8 @@ get_header(); ?>
 		
 				<div id="share-box">
 					<div class="share-box-container" id="twitterPress"><h4>Twitter</h4>Your can <a href="http://twitter.com/ukCPI">follow @ukCPI on Twitter</a> for updates.</div>
-					<div class="share-box-container" id="newsletterPress"><h4>Newsletter</h4>You can <a data-toggle="modal" href="#newsModal">sign up for our newsletter</a>.</div>
+					
+					<div class="share-box-container" id="newsletterPress"><h4>Newsletter</h4>You can <a  href="<?php bloginfo('url'); ?>/cpi-newsletter/">sign up for our newsletter</a> for Biologics updates.</div>
 					<div class="share-box-container" id="rssFeed"><h4>RSS Feed</h4>You can <a href="<?php bloginfo('url'); ?>/feed/?post_type=news">subscribe</a> to our RSS feed.</div>
 				</div>
 
@@ -57,6 +58,6 @@ get_header(); ?>
 </section>
     
     	</div>
-    		<?php include 'newsletter.php'; ?>
+    		
 <?php get_footer(); ?>
 	

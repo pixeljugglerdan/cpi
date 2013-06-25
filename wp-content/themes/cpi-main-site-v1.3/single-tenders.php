@@ -49,10 +49,12 @@ get_header(); ?>
 					<p><?php echo get_post_meta($post->ID, 'additionalinfo', true); ?></p>
 					</div> 
 				<?php endif; ?>
-				
 
-				<?php edit_post_link( __( 'Edit Page' ), '<span class="edit-link">', '</span>' ); ?>
     <?php endwhile; // end of the loop. ?>
+
+    <a class="btn" href="<?php bloginfo('url'); ?>/register-your-interest/">Register your interest</a>
+
+    <?php edit_post_link( __( 'Edit Page' ), ' <br/> <br/><span class="edit-link">', '</span>' ); ?>
 
     </div>
       	  

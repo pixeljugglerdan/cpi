@@ -37,7 +37,29 @@ get_header(); ?>
 
 	</div>
 	<h1><?php the_title(); ?></h1>
+	
+	<?php if ( get_post_meta($post->ID, 'refrence', true) ) : ?>
+		<h4><strong>Ref No.:</strong> <?php echo get_post_meta($post->ID, 'refrence', true); ?></h4>
+	<?php endif; ?>
+	
+	<?php if ( get_post_meta($post->ID, 'salary', true) ) : ?>
+		<h4><strong>Salary:</strong> <?php echo get_post_meta($post->ID, 'salary', true); ?></h4>
+	<?php endif; ?>
+	
+	<?php if ( get_post_meta($post->ID, 'employmenttype', true) ) : ?>
+		<h4><strong>Employment Type:</strong> <?php echo get_post_meta($post->ID, 'employmenttype', true); ?></h4>
+	<?php endif; ?>
+	
+	<?php if ( get_post_meta($post->ID, 'location', true) ) : ?>
+		<h4><strong>Location:</strong> <?php echo get_post_meta($post->ID, 'location', true); ?></h4>
+	<?php endif; ?>
+	
+	<?php if ( get_post_meta($post->ID, 'enddate', true) ) : ?>
+		<h4><strong>Deadline:</strong> <?php echo get_post_meta($post->ID, 'enddate', true); ?></h4>
+	<?php endif; ?>
+	
 			<?php the_content(); ?>
+
 			
 				<?php if ( get_post_meta($post->ID, 'additionalinfo', true) ) : ?>
 					<h2 class="trigger"><a href="#">Additional Information</a></h2> 
@@ -45,6 +67,11 @@ get_header(); ?>
 					<p><?php echo get_post_meta($post->ID, 'additionalinfo', true); ?></p>
 					</div> 
 				<?php endif; ?>
+
+		<p>
+			<a href="<?php bloginfo('url'); ?>/contact-human-resources/" class="btn">Apply for this Vacancy</a>
+		</p>
+
 
 				<?php edit_post_link( __( 'Edit Page' ), '<span class="edit-link">', '</span>' ); ?>
     <?php endwhile; // end of the loop. ?>

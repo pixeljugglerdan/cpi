@@ -1,17 +1,4 @@
 
-var player = document.getElementById('zXscUitXHPc'); //save the object or embed youtube video in a variable
-$('#ttvideoModalOne').on('hide', function () {
-  player.stopVideo();
-})
-
-var vidplayer = document.getElementById('MjXAo2qxMlA'); //save the object or embed youtube video in a variable
-$('#ttvideoModalTwo').on('hide', function () {
-  vidplayer.stopVideo();
-})
-
-
-
-
 // START Document Ready Function
 $(document).ready(function(){
 
@@ -48,16 +35,6 @@ $.ajaxSetup({cache:false});
 					$("#your_post_here").load("http://www.uk-cpi.com/ajax-tenders/",{id:post_id});
 					return false;
 					});
-					
-// Tender Fetch Ajax Posts
-$.ajaxSetup({cache:false});
-				$("#careersMenu li a").click(function(){
-					var post_id = $(this).attr("rel")
-					$("#your_post_here").html("loading...");
-					$('div.tenderAlert').hide();
-					$("#your_post_here").load("http://www.uk-cpi.com/ajax-careers/",{id:post_id});
-					return false;
-					});
 
 
 // Accordion Menu
@@ -72,20 +49,6 @@ $.ajaxSetup({cache:false});
 	});
 
 
-// Initialise Tweet for Footer
-
-$(".tweet").tweet({
-            username: "ukcpi",
-            join_text: "auto",
-            count: 1,
-            auto_join_text_default: "we said,", 
-            auto_join_text_ed: "we",
-            auto_join_text_ing: "we were",
-            auto_join_text_reply: "we replied to",
-            auto_join_text_url: "we were checking out",
-            loading_text: "loading recent tweet...",
-            template: "{text} - {retweet_action}"
-        });
 
 // Onclick inputbox clear for short search
 $('#s').focus(function() {
@@ -108,53 +71,4 @@ $('#s').focus(function() {
  	});
 
 
-
-// Newsletter reveal
-var fieldExample = $('#mce-EMAIL');
-$('div.newsletterExtend').css({
-    "position":"absolute",
-    "left":"0",
-    "top":"102px"
-});
-
-fieldExample.focus(function() {
-    var div = $('div.newsletterExtend').show();
-    $(document).bind('focusin.newsletterExtend click.newsletterExtend',function(e) {
-        if ($(e.target).closest('.newsletterExtend, #mce-EMAIL').length) return;
-        $(document).unbind('.newsletterExtend');
-        div.fadeOut('medium');
-    });
-});
-$('div.newsletterExtend').hide();
-
-
-
-
 }); // End Document Ready Function
-
-
-$(document).ready(init);
-
-function init() {
-	$("#slide2").cycle({
-		fx:     'scrollHorz', 
-    	prev:   '#prev2', 
-    	next:   '#next2',  
-    	timeout: 0 
-	});
-	
-	$('.square-slider').cycle({ 
-    	fx:     'fade', 
-    	speed:  'slow',  
-    	next:   '#next1', 
-    	prev:   '#prev1' 
-	});
-	
-		$("#future-slide").cycle({
-		fx:     'fade', 
-    	prev:   '#prev2', 
-    	next:   '#next2',  
-    	timeout: 0 
-	});
-	
-}

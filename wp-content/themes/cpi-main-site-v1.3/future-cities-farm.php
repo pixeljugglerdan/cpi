@@ -14,7 +14,7 @@ get_header(); ?>
 <div class="future-header future-header-small">
 	<h1 class="fadein">Sustainable Agriculture</h1>
 	<p class="fadein">Farms built to reclaim city waste and utilise enhanced biological growing.</p>
-	<a data-toggle="modal" href="#newsModal" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
+	<a target="_blank"  href="<?php bloginfo('url'); ?>/cpi-newsletter/" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
 	
 	<?php include 'reuse/future/future-share.php'; ?>
 	
@@ -115,5 +115,4 @@ Wastes from animals will be processed through AD systems giving fertiliser and e
 
     	
 </div>   
-	<?php include 'newsletter.php'; ?>
 	<?php get_footer(); ?>

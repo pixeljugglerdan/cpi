@@ -1,6 +1,3 @@
-body{
-	position: relative;
-}
 
 #ecd_opt_in_banner
 {	
@@ -9,9 +6,10 @@ body{
 	z-index: 99999;
 	background-color: #3B3B3B;
 	color: #EEE;
-	overflow: auto;
 	padding-bottom: 40px;
-
+	position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 #ecd_opt_in_banner a { color: #DC4D00; border-bottom: 1px dotted #DC4D00;}
 #ecd_opt_in_banner a:hover { color: #FFF; border-bottom: 1px solid #fff; padding-bottom: 1px; }

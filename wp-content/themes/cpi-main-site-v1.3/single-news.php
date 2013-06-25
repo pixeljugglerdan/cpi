@@ -63,7 +63,7 @@ get_header(); ?>
     <aside>
     
     	<?php include 'reuse/recent-news-sidebar.php'; ?>    
-    	
+    	<!--
     	<div class="aside-box">
     	
 			<div class="twitterBox">
@@ -71,7 +71,7 @@ get_header(); ?>
 				<div class="tweet"></div>
 				<a class="btn" href="http://twitter.com/ukcpi">Follow CPI on Twitter</a>
 			</div>
-		</div>
+		</div>-->
     	<div class="aside-box">
         	<h3>Want to find out more?</h3><br/>
     	<h2>Marketing Contact</h2>
@@ -104,6 +104,16 @@ while(x=eval(x));
 
 		<a href="<?php bloginfo('url'); ?>/contact" class="btn">More Contact Information</a>
 </div>
+
+
+<div class="aside-box">
+<h3>
+<a class="" href="<?php bloginfo('url'); ?>/cpi-newsletter/">
+				<i class="icon-envelope-alt"></i> Sign up for our Newsletter &#187;
+			</a>
+</h3>
+</div>
+
 
     </aside>
 	

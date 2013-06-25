@@ -123,6 +123,40 @@ get_header(); ?>
 </div>
 </div>
 
+<!-- IF BI -->
+<?php } else if (is_tax( 'technology-news', 'biologics-news')) {?>
+<div id="titleArea" class="titleAreaArchive">	
+	<span class="section-title"><h1><a href="<?php bloginfo('url'); ?>/biologics/"><?php printf( $term->name ); ?></a></h1></span>
+	
+	<nav>
+	<ul>
+	<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu' => 'Biologics Nav', 'items_wrap' => '%3$s' ) ); ?>
+	</ul>
+	</nav>
+
+	<div id="titleArchive" class="titleAreaArchive">	
+	<span class="section-title"><h1>News</h1></span>
+	<?php include 'reuse/news-filter.php'; ?>
+</div>
+</div>
+
+<!-- IF BI Update -->
+<?php } else if (is_tax( 'technology-news', 'biologics-update')) {?>
+<div id="titleArea" class="titleAreaArchive">	
+	<span class="section-title"><h1><a href="<?php bloginfo('url'); ?>/biologics/"><?php printf( $term->name ); ?></a></h1></span>
+	
+	<nav>
+	<ul>
+	<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu' => 'Biologics Nav', 'items_wrap' => '%3$s' ) ); ?>
+	</ul>
+	</nav>
+
+	<div id="titleArchive" class="titleAreaArchive">	
+	<span class="section-title"><h1>News</h1></span>
+	<?php include 'reuse/news-filter.php'; ?>
+</div>
+</div>
+
 <!-- IF Corp -->
 <?php } else if (is_tax( 'technology-news', 'corporate-news')) {?>
 

@@ -18,18 +18,12 @@ define('WP_CACHE', true);
  */
 
 
-if (isset($_SERVER['PLATFORM']) && $_SERVER['PLATFORM'] == 'PAGODABOX') {
-    define('DB_NAME', $_SERVER['DB1_NAME']);
-    define('DB_USER', $_SERVER['DB1_USER']);
-    define('DB_PASSWORD', $_SERVER['DB1_PASS']);
-    define ('DB_HOST', $_SERVER['DB1_HOST'] . ':' . $_SERVER['DB1_PORT']);
-}
-else {
+
 	define('DB_NAME', 'new-cpi');
     define('DB_USER', 'root');
     define('DB_PASSWORD', 'root');
     define('DB_HOST', 'localhost');
-}
+
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

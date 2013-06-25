@@ -16,16 +16,14 @@ get_header(); ?>
 	</ul>
 </nav>
 </div>
+
+<div id="careersHeader" class="careersHeader-home">
+	<h1 id="techHeaderTitle">Work at CPI</h1>
+	<p id="techHeaderBlurb">Our employees apply innovative thinking to help companies develop products and processes. Join us to inspire the future...</p>
+</div>
 	
 <div class="careers-section" id="page-full">
-	<div id="post-sidebar">
-		<h1>Careers at CPI </h1>
-	<p>Our employees apply innovative thinking to help companies develop products and processes. Join us to inspire the future.</p>
-	</br>
-	<a href="<?php bloginfo('url'); ?>/contact-human-resources/" class="btn"><i class="icon-circle-arrow-right"></i> Download and submit application form</a>
-	</div>
-	
-	
+
 	<div id="careerPallet">
 	
 <div class="department">
@@ -53,12 +51,12 @@ get_header(); ?>
 			<a href="<?php bloginfo('url'); ?>/job-fields/all-jobs">
 				<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-all-icon.png" alt="Science and Engineering" width="34" height="34" />
 			</a>	
-		<h4><a href="<?php bloginfo('url'); ?>/job-fields/all-jobs">View all open <br/>Vacancies</a></h4>
+		<h4><a href="<?php bloginfo('url'); ?>/job-fields/all-jobs">View all open Vacancies</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-all-icon.png" alt="Science and Engineering" width="34" height="34" />
-			<h4>View all open <br/>Vacancies</h4>
+			<h4>View all open Vacancies</h4>
 		<?php } ?>
-			<p>Browse all open vacancies <br/>at CPI.</p>
+			<p>Browse all open vacancies at CPI.</p>
 		</div>
 		
 
@@ -71,10 +69,10 @@ get_header(); ?>
 			<a href="<?php bloginfo('url'); ?>/job-fields/science-and-engineering">
 				<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-science-icon.png" alt="Science and Engineering" width="34" height="34" />
 			</a>	
-		<h4><a href="<?php bloginfo('url'); ?>/job-fields/science-and-engineering">Science and <br/>Engineering</a></h4>
+		<h4><a href="<?php bloginfo('url'); ?>/job-fields/science-and-engineering">Science and Engineering</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-science-icon.png" alt="Science and Engineering" width="34" height="34" />
-			<h4>Science and <br/>Engineering</h4>
+			<h4>Science and Engineering</h4>
 		<?php } ?>
 			<p>We develop products and processes with CPI clients.</p>
 		</div>
@@ -87,10 +85,10 @@ get_header(); ?>
 		<p><a href="<?php bloginfo('url'); ?>/job-fields/admin-and-finance"><?php echo wt_get_category_count('33'); ?></a></p>
 		</div>
 			<a href="<?php bloginfo('url'); ?>/job-fields/admin-and-finance"><img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-admin-finance-icon.png" alt="Admin and Finance" width="32" height="32" /></a>
-			<h4><a href="<?php bloginfo('url'); ?>/job-fields/admin-and-finance">Admin and <br/>Finance</a></h4>
+			<h4><a href="<?php bloginfo('url'); ?>/job-fields/admin-and-finance">Admin and Finance</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-admin-finance-icon.png" alt="Admin and Finance" width="32" height="32" />
-			<h4>Admin and <br/>Finance</h4>
+			<h4>Admin and Finance</h4>
 		<?php } ?>
 			<p>We make sure operations run smoothly at CPI.</p>
 			</div>
@@ -104,10 +102,10 @@ get_header(); ?>
 			<a href="<?php bloginfo('url'); ?>/job-fields/health-and-safety">
 				<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-admin-icon.png" alt="Health and Safety" width="32" height="32" />
 			</a>	
-		<h4><a href="<?php bloginfo('url'); ?>/job-fields/health-and-safety">Health and <br/>Safety</a></h4>
+		<h4><a href="<?php bloginfo('url'); ?>/job-fields/health-and-safety">Health and Safety</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-admin-icon.png" alt="Health and Safety" width="32" height="32" />
-			<h4>Health and <br/>Safety</h4>
+			<h4>Health and Safety</h4>
 		<?php } ?>
 			<p>We encourage and regulate safety at CPI</p>
 		</div>
@@ -122,7 +120,7 @@ get_header(); ?>
 			<a href="<?php bloginfo('url'); ?>/job-fields/hr-and-recruitment">
 				<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-hr-icon.png" alt="Human Resources and Recruitment" width="32" height="32" />
 			</a>	
-		<h4><a href="<?php bloginfo('url'); ?>/job-fields/hr-and-recruitment">HR and <br/>Recruitment</a></h4>
+		<h4><a href="<?php bloginfo('url'); ?>/job-fields/hr-and-recruitment">HR and Recruitment</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-hr-icon.png" alt="Human Resources and Recruitment" width="32" height="32" />
 			<h4>Human Resources</h4>
@@ -140,10 +138,10 @@ get_header(); ?>
 			<a href="<?php bloginfo('url'); ?>/job-fields/it-and-communications">
 				<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-it-icon.png" alt="HR and Recruitment" width="32" height="32" />
 			</a>	
-		<h4><a href="<?php bloginfo('url'); ?>/job-fields/it-and-communications">IT and <br/>Communications</a></h4>
+		<h4><a href="<?php bloginfo('url'); ?>/job-fields/it-and-communications">IT and Communications</a></h4>
 		<?php } else { ?> 
 			<img src="<?php bloginfo('template_url'); ?>/-/images/content/careers/careers-it-icon.png" alt="HR and Recruitment" width="32" height="32" />
-			<h4>IT</h4>
+			<h4>IT Services</h4>
 		<?php } ?>
 			<p>We keep the computer systems and CPI employees connected.</p>
 		</div>

@@ -18,7 +18,7 @@ get_header(); ?>
 <div class="future-header future-header-small">
 	<h1 class="fadein">Waste Treatment</h1>
 	<p class="fadein">Waste treatment facilities built to integrate with energy production.</p>
-	<a data-toggle="modal" href="#newsModal" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
+	<a target="_blank"  href="<?php bloginfo('url'); ?>/cpi-newsletter/" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
 	
 	<?php include 'reuse/future/future-share.php'; ?>
 	
@@ -128,5 +128,5 @@ Waste treatment plants may also use a wider range feedstock from industrial, agr
 
     	
 </div>   
-	<?php include 'newsletter.php'; ?>
+
 	<?php get_footer(); ?>

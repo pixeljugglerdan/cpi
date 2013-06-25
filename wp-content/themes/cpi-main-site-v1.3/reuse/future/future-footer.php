@@ -40,12 +40,3 @@
 
 
 </div><!-- End Future Section -->
-
-
-
-
-<div class="future-contact">
-	<div class="future-contact-btn">
-		<a href="<?php bloginfo( 'url' ); ?>/contact/" class="btn btn-large btn-future-flight future-large" onClick="javascript: pageTracker._trackPageview('green-contact');">Work with us</a>
-	</div>
-</div>

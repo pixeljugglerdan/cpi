@@ -35,6 +35,7 @@
 	
 	<link rel="stylesheet/less" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/-/css/preset.less">
 	<link rel="stylesheet/less" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/-/css/bootstrap.min.less">
+	
 	<link rel="stylesheet/less" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/-/css/font-awesome.less">
 	<link rel="stylesheet/less" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/-/css/master.less">
 	
@@ -47,44 +48,39 @@
 		<!--[if lte IE 8]>
 		<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/-/css/ie8.less" media="screen" type="text/css" />
 		<![endif]-->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="<?php bloginfo( 'template_url' ); ?>/-/js/jquery-1.8.2.min.js">\x3C/script>')</script>
-
-	<!-- Less -->
-	<script src="<?php bloginfo( 'template_url' ); ?>/-/js/less-1.3.0.min.js" type="text/javascript"></script>
 		
-		
-		
-  <!-- JS Scripts -->
-  <!-- JQ extend selectors --><script src="<?php bloginfo( 'template_url' ); ?>/-/js/jquery-extended-selectors.js"></script>	
-  <!-- JS Snippets --><script src="<?php bloginfo( 'template_url' ); ?>/-/js/application.js" type="text/javascript" charset="utf-8"></script>			
-  <!-- Fetch Tweets --><script src="<?php bloginfo( 'template_url' ); ?>/-/js/jquery.tweet.min.js" type="text/javascript" charset="utf-8"></script>  
-  <!-- Bootstrap --><script src="<?php bloginfo( 'template_url' ); ?>/-/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>	
-  <!-- Cycle --><script src="<?php bloginfo( 'template_url' ); ?>/-/js/jquery.cycle.lite.js" type="text/javascript" charset="utf-8"></script>
+		<?php wp_head(); ?>	
 
+    <!-- JS Scripts -->
+  <!-- JQ extend selectors -->
+  	<script src="<?php bloginfo( 'template_url' ); ?>/-/js/jquery-extended-selectors.js"></script>
+  	
+  <!-- JS Bootstrap -->
+  	<script src="<?php bloginfo( 'template_url' ); ?>/-/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>	
 
-		
-<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- JS Snippets -->
+  	<script src="<?php bloginfo( 'template_url' ); ?>/-/js/application.js" type="text/javascript" charset="utf-8"></script>		   
 	
 
-	<?php wp_head(); ?>
+
+  <!-- Less -->
+	<script src="<?php bloginfo( 'template_url' ); ?>/-/js/less-1.3.0.min.js" type="text/javascript"></script>
+
+		
+  <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	
+
+
 
 </head>
 	
-	
-	
-	
-<?php $fadein = 'fadein'; ?>
+
 
 <body lang="en" <?php body_class(); ?>>
 	
 	<a id="top" name="top"></a>
-
-
-	<div class="cpibox">
 
 	
 <!--[if lt IE 8]>
@@ -98,7 +94,8 @@
 	
 
 	
-	
+<div class="outer-header">
+<div class="cpibox">	
 	<header>
 			<div id="top-links">
 				<a href="<?php bloginfo('url'); ?>/tenders/">Tenders</a> |
@@ -107,47 +104,46 @@
 				<a href="<?php bloginfo('url'); ?>/privacy/">Cookies</a>
 			</div>	
 	
-	<div id="logo">
-		<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="153" height="78" /></a>
-	</div>
+			<div id="logo">
+				<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="153" height="78" /></a>
+			</div>
 	
 		<nav>
 			<ul>
-<li><a class="white-nav" href="<?php bloginfo('url'); ?>">Home</a></li> 
-<li><a class="white-nav" href="<?php bloginfo('url'); ?>/about/">About</a></li>
-<li><a class="white-nav" href="<?php bloginfo('url'); ?>/services/">Services</a></li>
+			<li><a class="white-nav" href="<?php bloginfo('url'); ?>">Home</a></li> 
+			<li><a class="white-nav" href="<?php bloginfo('url'); ?>/about/">About</a></li>
+			<li><a class="white-nav" href="<?php bloginfo('url'); ?>/services/">Services</a></li>
 
-<li id="browse-menu"><a class="white-nav" id="show-contents-menu" href="<?php bloginfo('url'); ?>/technologies/">Technologies</a>
+			<li id="browse-menu"><a class="white-nav" id="show-contents-menu" href="<?php bloginfo('url'); ?>/technologies/">Technologies</a>
+				<div id="contents-dropdown"> 		
+				<div id="technology-drop">
+    			<ul>
+    				<li class="ib-icon-small"><a href="<?php bloginfo('url'); ?>/industrial-biotechnology/">Industrial Biotechnology</a></li>
+    				<li class="pe-icon-small"><a href="<?php bloginfo('url'); ?>/printable-electronics/">Printable Electronics</a></li>
+    				<li class="sc-icon-small"><a href="<?php bloginfo('url'); ?>/smart-chemistry/">Smart Chemistry</a></li>
+    				<li class="ad-icon-small"><a href="<?php bloginfo('url'); ?>/anaerobic-digestion/">Anaerobic Digestion</a></li>
+    				<li class="tt-icon-small"><a href="<?php bloginfo('url'); ?>/thermal-technologies/">Thermal Technologies</a></li>
+    				<li class="se-icon-small"><a href="<?php bloginfo('url'); ?>/sustainable-engineering/">Sustainable Engineering</a></li>
+    			</ul>
+				</div> 
+				</div> 
+			</li>
 
-		<div id="contents-dropdown"> 		
-			<div id="technology-drop">
-    		<ul>
-    		<li class="ib-icon-small"><a href="<?php bloginfo('url'); ?>/industrial-biotechnology/">Industrial Biotechnology</a></li>
-    		<li class="pe-icon-small"><a href="<?php bloginfo('url'); ?>/printable-electronics/">Printable Electronics</a></li>
-    		<li class="sc-icon-small"><a href="<?php bloginfo('url'); ?>/smart-chemistry/">Smart Chemistry</a></li>
-    		<li class="ad-icon-small"><a href="<?php bloginfo('url'); ?>/anaerobic-digestion/">Anaerobic Digestion</a></li>
-    		<li class="tt-icon-small"><a href="<?php bloginfo('url'); ?>/thermal-technologies/">Thermal Technologies</a></li>
-    		<li class="se-icon-small"><a href="<?php bloginfo('url'); ?>/sustainable-engineering/">Sustainable Engineering</a></li>
-    		</ul>
-			</div> 
-		</div> 
-
-</li>
-
-<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/markets/">Markets</a></li> 
-<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/news/">News</a></li> 
-<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/case-studies/">Case Studies</a></li> 
-<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/contact/">Contact</a></li>
+			<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/markets/">Markets</a></li> 
+			<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/news/">News</a></li> 
+			<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/case-studies/">Case Studies</a></li> 
+			<li class="gutter"><a class="white-nav" href="<?php bloginfo('url'); ?>/contact/">Contact</a></li>
 			<li id="searchBox">
 				<?php get_search_form(); ?>
 			</li>
 			</ul>
-			
 		</nav>
 		
 
 	</header>
-	
-	<?php if ( is_front_page() ) { ?>	
-	</div>
-	<?php } ?>
+</div>
+</div>
+
+<?php if( !is_home() ) { ?>
+<div class="cpibox">
+<?php } ?>

@@ -9,16 +9,12 @@ get_header(); ?>
 
 
 <div id="homePage">
-
-
-<?php if(function_exists('genki_announcement')) { genki_announcement(); } ?>
-
-
+</div>
 
 <div class="future-header">
 	<h1 class="fadein">Sustainable Cities</h1>
 	<p class="fadein">Discover how our technologies will support sustainable cities.</p>
-	<a data-toggle="modal" href="#newsModal" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a><br/>
+	<a target="_blank"  href="<?php bloginfo('url'); ?>/cpi-newsletter/" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a><br/>
 	
 	<div class="future-share fadein">
 			<!-- AddThis Button BEGIN -->
@@ -33,7 +29,6 @@ get_header(); ?>
 <!-- AddThis Button END -->
 	</div>
 	
-	<div id="future-header-view"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/future/header-cities-hand.png" /></div>
 	<div class="future-all-markets hide"><a href="<?php bloginfo('url'); ?>/markets/">
 		<i class="icon-share-alt"></i> View All Markets</a>
 	</div>
@@ -189,6 +184,6 @@ CPI supports the development of the processes, technologies and products that ca
 </div>
     	
 </div>   
-	<?php include 'newsletter.php'; ?>
+
 	<?php get_footer(); ?>
 	

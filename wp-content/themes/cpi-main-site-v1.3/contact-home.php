@@ -47,7 +47,7 @@ mixpanel.track("Visited Contact Page");
 			County Durham,<br/>
 			TS21 3FG<br/>
 			T: +44 (0) 1740 625700<br/>
-			F: +44 (0) 1740 625763<br/>
+			F: +44 (0) 1740 625701<br/>
 						<a href="https://maps.google.co.uk/maps?daddr=CPI,+Sedgefield+Thomas+Wright+Way,+NETPark,+Sedgefield,+County+Durham,+TS21+3FG&hl=en&sll=54.575594,-1.102796&sspn=0.007972,0.022702&mra=ls&t=m&z=16" class="btn" target="_blank">Get Directions</a>
 			</p>
 		</div>

@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {font-family: @font_heading;}
 
 
 /* CONTAINER BOX */
-.cpibox { width: 980px;padding: 0 px 5px 5px 5px;margin: 0 auto;color: rgb(60,60,60);-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */}
+.cpibox { width: 980px;padding: 0px 5px 5px 5px; margin: 0 auto;color: rgb(60,60,60);-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */}
 
 /* SECTION BOX */
 
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {font-family: @font_heading;}
 @no_bodr_box_width: 313px;
 
 /* BOX--- the defult box style -- */
-section, .careers-section, #fatFooter, #petecHeader, #aboutHeader, #aboutCatapult, #legalHeader, #ibHeader, #ttHeader, #adHeader, #seHeader, #scHeader, #page, .aside-box, #markets, #services, #tenders, .home-hide {
+section, .careers-section, #fatFooter, #petecHeader, #biologicsHeader, #aboutHeader, #aboutCatapult, #legalHeader, #ibHeader, #ttHeader, #adHeader, #seHeader, #scHeader, #page, .aside-box, #markets, #services, #tenders, #careersHeader, .home-hide {
   width: @bodr_box_width;
   height: 214px;
   float: left;
@@ -100,7 +100,7 @@ section:nth-of-type(3n+2) { margin-right: 20px; margin-left: 20px; }
 
 /* BOX--- archive-news-box --- */
   .zz-archive-box { position: relative; height: 255px; overflow: hidden;}
-  .zz-archive-box .archive-item img {.thumb-image;}
+  .zz-archive-box .archive-item img, .calImg img {.thumb-image; margin-top: 5px;}
   .zz-archive-box:hover { color: #959DA5; background: #F8F9FC url("@{base_url}/site-bg.png"); .inset-shadow; }
   .zz-archive-box:hover a { color: @orange; }
   .zz-archive-box:active { border: 1px solid #959DA5; }
@@ -148,6 +148,8 @@ aside .twitterBox li { border-bottom: none; }
 #page .list-box ul, #page .list-careers-box ul  { list-style-position: inside; list-style: none; margin: 10px 0 0 0; padding: 0; padding-left: 1em;
 	text-indent: -0.9em;}
 #page .list-box ul li:before { content: "\00BB \0020";}
+#page .fact-list{float:right; margin-right:0;}
+#page .biologics-box { float:left; width:612px; }
 
 #page .list-careers-box { width: 280px; float: left; margin-bottom: 5px; margin-right: 20px;}
 
@@ -169,6 +171,26 @@ aside .twitterBox li { border-bottom: none; }
 #page-header-title h1 { color: @white; background: url("@{base_url}/caption-bg.png") repeat; margin-right: 20px; margin-top: 0; padding: 20px; position: relative; top: 40px; left: 0; line-height: 33px; display:inline; width: 100px; font-size: 26px; }
 
 .tata-video-box {width:auto;height:150px;float:right;margin:0 0 20px 40px;border-left:1px solid #DDD;padding:0 20px 0 30px;}
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 
 #zz-tech-page #page  { width: auto;}
 
@@ -218,6 +240,7 @@ aside .twitterBox li { border-bottom: none; }
 .news-ad { background: @white url("@{content_url}/news/news-ad.jpg") left bottom no-repeat;}
 .news-se { background: @white url("@{content_url}/news/news-se.jpg") left bottom no-repeat;}
 .news-sc { background: @white url("@{content_url}/news/news-sc.jpg") left bottom no-repeat;}
+.news-bi { background: @white url("@{content_url}/news/news-bi.jpg") left bottom no-repeat;}
 
 .light-bulb {background: @white url("@{content_url}/404/light-bulb.jpg") left bottom no-repeat;}
 .g-lamp {background: @white url("@{content_url}/404/g-lamp.jpg") left bottom no-repeat;}
@@ -228,6 +251,8 @@ aside .twitterBox li { border-bottom: none; }
 .sc-contact { background: url("@{content_url}/contact/contact-sc.jpg");}
 .tt-facilities { background: url("@{content_url}/thermal-technology/facilities-tt.jpg");}
 .ad-facilities { background: url("@{content_url}/anaerobic-digestion/facilities-ad.jpg");}
+
+.bi-profile { background: url("@{content_url}/biologics/profile-bi.jpg");}
 
 .business-support { background: @white url("@{content_url}/business-support/business-support.jpg");}
 .annual-report { background: @white url("@{content_url}/annual-report/annual-report.png") ;}
@@ -243,10 +268,12 @@ aside .twitterBox li { border-bottom: none; }
 .feedstocks { background: @white url("@{content_url}/industrial-biotechnology/feedstocks.jpg") ;}
 .prototype { background: url("@{content_url}/thermal-technology/prototype.jpg");}
 .polyphotonix { background: url("@{content_url}/home/polyphotonix.jpg");}
+.peratech { background: url("@{content_url}/home/peratech.jpg"); }
 .plaxica { background: url("@{content_url}/home/plaxica.jpg");}
 .values { background: url("@{content_url}/home/values.jpg");}
 .innovation-gap { background: url("@{content_url}/home/innovation-gap.jpg");}
 .sustainable-cities-bg { background: url("@{content_url}/home/sustainable-cities-bg.jpg"); }
+.automotive-bg { background: url("@{content_url}/home/automotive-bg.jpg"); }
 
 .service-tech-ib {background: @white url("@{content_url}/services/service-tech-ib.jpg");}
 .service-tech-pe {background: @white url("@{content_url}/services/service-tech-pe.jpg");}
@@ -288,10 +315,13 @@ aside .twitterBox li { border-bottom: none; }
 .fac-ib-02 {background: @white url("@{content_url}/industrial-biotechnology/pilot-fac.jpg");}
 .fac-ib-03 {background: @white url("@{content_url}/industrial-biotechnology/demo.jpg");}
 
-/*	Header  */
-#ecd_opt_in_banner { background: url("@{base_url}/cookie-border.png") bottom left repeat-x; }
+.bottles-bi { background: url("@{content_url}/biologics/bottles-bi.jpg");}
 
-header { height: 80px; width: 100%; margin-bottom: 15px; margin-top: 10px; padding-top: 10px; position: relative; }
+/*	Header  */
+
+.outer-header { background: #FFF; width: 100%; display: block; height: auto;}
+
+header { height: 80px; width: 100%; margin-bottom: 15px; padding-top: 20px; position: relative;}
 header nav ul {width: 80%; margin-top: 20px; margin-bottom: 5px; float: right; }
 header nav ul li a { float: left; padding: 6px 8px 7px 8px; background: url("@{base_url}/menu-border.png") no-repeat center right; font-size: 15px; text-decoration: none; color: @black; font-family: @font_menu; }
 header nav ul li a:hover { color: @orange; text-decoration: none; }
@@ -340,7 +370,7 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
 #logo { float: left; margin: 0 0 15px 5px; }
 #logo img { height: 0; }
 #logo a { display: block; width: 153px; height: 79px; background: url("@{base_url}/logo.png") no-repeat 0 0; }
-#top-links { position: absolute; top: 0px; right: 2px; text-align: right;font-size: 11px;color: #959DA5;text-decoration: none;margin-right: 10px;}
+#top-links { position: absolute; top: 10px; right: 2px; text-align: right;font-size: 11px;color: #959DA5;text-decoration: none;margin-right: 10px;}
 #top-links a { color: @charcoal; }
 #top-links a:hover { color: @blue; }
 
@@ -397,12 +427,12 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
 
 /* In Page Formatting */
   .tic-partners { padding: 0 0 20px 0; border-bottom: 2px solid #DDD;}
-  .team-box-container {height: 110px;width: 280px;padding: 10px;float: left;}
+  .team-box-container {height: 140px;width: 280px;padding: 10px;float: left;}
   .team-box-container img {float: left; margin-right: 10px; margin-top: 12px; margin-bottom: 30px;}
   
   .tech-box-container {height: 60px; width: 280px; padding-top: 10px;float: left;}
   .business-box {height: 250px; margin-bottom: 40px; margin-right: 20px;}
-
+  .fact-list{float:right; margin-right:0;}
 
 /*	Markets, Services & Support Pages  */
   #markets, #services, #tenders { width: auto; height: auto; padding: 0; }
@@ -459,47 +489,17 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   a:hover.home-link {color: @blue;}
   .home-hide { display: none; }
   .home-hide h1 {margin-top: 0;}
-
   
-/* Slider */
-  .square-slider-contain {position: relative;}  
-  .square-slider {overflow: hidden;position: relative;background: @white;}
-  .square-slider .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; opacity: 0; background-color: @white;}
-  .square-slider .slide:first-child { display: block; }
-  .square-slider .slide:first-child,
-  .square-slider .slide.active { opacity: 1; -moz-opacity: 1; }
-  .slide.active {z-index: 9;}
-  .square-slider .slide .content { position: absolute; top: 0; left: 48%; margin-left: -450px; width: 360px; text-shadow: 0 1px 1px rgba(0,0,0,0.3); z-index: 7; }
-  .square-slider .slide.inverted .asset { left: auto; right: 50%; }
-  .square-slider .slide.active .asset { -webkit-transform: translate3d(-7px, 3px, 0); -moz-transform: translate(-7px, 3px); }
-  .square-slider .slide.inverted.active .asset { -webkit-transform: translate3d(7px, 3px, 0); -moz-transform: translate(7px, 3px);}
-  .square-slider .slide.active .content { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate(0, 0);}
-  .square-slider-contain .prev, .square-slider-contain .next { background: url("@{base_url}/nav.png") no-repeat; display: block; width: 67px; height: 67px; position: absolute; top: 50%; margin-top: -30px; z-index: 100; border: 0; text-indent: -9999px; opacity: 0.6; -moz-opacity: 0.6; -webkit-transition: opacity 0.5s ease-in; -moz-transition: opacity 0.5s ease-in; -ms-transition: opacity 0.5s ease-in; -o-transition: opacity 0.5s ease-in; transition: opacity 0.5s ease-in;}
-  .square-slider-contain .prev { left: 40px; background-position: 0 100%; }
-  .square-slider-contain .next { right: 40px; }
-  .square-slider-contain .prev:hover, .square-slider-contain .next:hover { opacity: 1; -moz-opacity: 1; }
-
-/* Customisations */
-.asset { margin-top: 50px; margin-bottom: 20px; }
-.square-slider { width: 100%; height: 324px; margin: 0 auto; margin-bottom: 20px; }
-.square-slider .slide .content.light { color: @white; }
-.square-slider .slide .content.dark { color: @charcoal; text-shadow: 0 1px 1px rgba(255,255,255,0.3); }
-.square-slider .slide1 { background: url("@{content_url}/home/home-background1.png") no-repeat 50% 50%; }
-.square-slider .slide2 { background: url("@{content_url}/home/home-background3.png") no-repeat 50% 50%; }
-.square-slider .slide3 { background: url("@{content_url}/home/home-background2.png") no-repeat 50% 50%; } 
-.square-slider .slide4 { background: url("@{content_url}/home/home-background4.png") no-repeat 50% 50%; }  
-
-
-#slideNow .prev, #slideNow .next { position: absolute; top: 40%; z-index: 100; background: @charcoal; padding: 6px 14px 5px 13px; color: @white; border: 3px solid @white;}
-#slideNow .prev { left: -10px; }
-#slideNow .next { right: -10px; padding: 6px 13px 5px 14px;}
-#slideNow .prev:hover, #slideNow .next:hover { background: @blue; color: @white;}
-#slideNow { width: 100%; position: relative; float: left; height: auto; }
-
-
+  .asset { margin-top: 50px; margin-bottom: 20px; }
 
 
   
+  .slide1 { background: url("@{content_url}/home/home-background1.png") no-repeat 50% 50%; }
+  .slide2 { background: url("@{content_url}/home/home-background3.png") no-repeat 50% 50%; }
+  .slide3 { background: url("@{content_url}/home/home-background2.png") no-repeat 50% 50%; } 
+  .slide4 { background: url("@{content_url}/home/home-background4.png") no-repeat 50% 50%; }  
+
+
 /* Home Icons */  
 
 .tech-icon-list { padding-left: 24px; }
@@ -509,14 +509,7 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
 .ad-icon-small a { background: url("@{icon_url}/ad-icon-small.png") center left no-repeat; .tech-icon-list }
 .tt-icon-small a { background: url("@{icon_url}/tt-icon-small.png") center left no-repeat; .tech-icon-list }
 .se-icon-small a { background: url("@{icon_url}/se-icon-small.png") center left no-repeat; .tech-icon-list }
-  
-.personal-icon-small a { background: url("@{icon_url}/personal-icon-small.png") center left no-repeat; .tech-icon-list }   		
-.energy-icon-small a { background: url("@{icon_url}/energy-icon-small.png") center left no-repeat; .tech-icon-list }
-.aeospace-icon-small a { background: url("@{icon_url}/aeospace-icon-small.png") center left no-repeat; .tech-icon-list }
-.chemicals-icon-small a { background: url("@{icon_url}/chemicals-icon-small.png") center left no-repeat; .tech-icon-list }
-.automotive-icon-small a { background: url("@{icon_url}/automotive-icon-small.png") center left no-repeat; .tech-icon-list }    		
-.materials-icon-small a { background: url("@{icon_url}/materials-icon-small.png") center left no-repeat; .tech-icon-list }
-.pharam-icon-small a { background: url("@{icon_url}/pharam-icon-small.png") center left no-repeat; .tech-icon-list }
+
 
 
 /*	Press Room, Careers, Tenders  */
@@ -540,8 +533,8 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   .jobCount a { width: 19px; height: 19px; background-color: rgba(227, 76, 18, 0.8); color: rgba(255, 255, 255, 1); position: absolute; top: -4px; left: -5px; font-weight: bold; padding: 0px; -moz-border-radius:12px; -webkit-border-radius:12px; border-radius:10px; display: table; -webkit-box-shadow: 0px 0px 0px 2px @white; -moz-box-shadow: 0px 0px 0px 2px @white; box-shadow: 0px 0px 0px 2px @white;  }
   .jobCount a:hover {background-color: rgba(227, 76, 18, 1); -webkit-box-shadow: 0px 0px 0px 2px rgba(227, 76, 18, 1); -moz-box-shadow: 0px 0px 0px 2px rgba(227, 76, 18, 1); box-shadow: 0px 0px 0px 2px rgba(227, 76, 18, 1); }
   .jobCount p { display: table-cell; vertical-align: middle; text-align: center; }
-  .department { width: 190px; height: 90px; margin: 20px 0 0 20px; float: left; border-bottom: 1px dotted @blue_gray; position: relative; }
-  .department img { float: left; margin-right: 10px; }
+  .department { width: 265px; height: 80px; margin: 20px 30px 0 30px; float: left; position: relative; }
+  .department img { float: left; margin-right: 20px; margin-bottom: 20px; padding-top: 3px; }
   .department h4 { font-size: 16px; font-family: @font_heading; }
   .department p { font-size: 14px; line-height: 20px; }
   #gform_wrapper_5 { background: @blue_gray;  padding: 10px; width: 280px; margin: 0;}
@@ -586,6 +579,7 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   .ad-section-header { background: url("@{content_url}/anaerobic-digestion/rotate-ad/rotate.php") no-repeat; }
   .sc-section-header { background: url("@{content_url}/smart-chemistry/rotate-sc/rotate.php") no-repeat; }
   .se-section-header { background: url("@{content_url}/sustainable-engineering/rotate/rotate.php") no-repeat;	}
+  .bi-section-header { background: url("@{content_url}/biologics/bi-section-header.png") no-repeat; }
   .se-section-header h1, .about-profile-section-header h1 { font-size: 24px; }
 
   .random-image-scale { height: 100px; width: 100%;}
@@ -595,7 +589,7 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   #randomImage-ad { background: url("@{content_url}/anaerobic-digestion/rotate-ad/rotate.php") no-repeat; .random-image-scale; }
   #randomImage-se { background: url("@{content_url}/sustainable-engineering/rotate/rotate.php") no-repeat; .random-image-scale; }
   #randomImage-sc { background: url("@{content_url}/smart-chemistry/rotate-sc/rotate.php") no-repeat; .random-image-scale; }
-  #petecHeader, #aboutHeader, #aboutCatapult, #legalHeader, #ibHeader, #ttHeader, #adHeader, #seHeader, #scHeader  {
+  #petecHeader, #biologicsHeader, #aboutHeader, #aboutCatapult, #legalHeader, #ibHeader, #ttHeader, #adHeader, #seHeader, #scHeader, #careersHeader  {
   padding: 0;height: 200px;width: 100%;background: url("@{content_url}/printable-electronics/petec-home-header.png") no-repeat top right;position: relative;text-shadow: 1px 1px 0px @black;filter: dropshadow(color=@charcoal, offx=1, offy=1);.no-shadow; border: none;
   }
   #legalHeader { background: url("@{content_url}/about/legal-header.png") no-repeat; }
@@ -606,6 +600,21 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   #scHeader { background: url("@{content_url}/smart-chemistry/sc-home-header.jpg") no-repeat top right; }
   #aboutHeader { background: url("@{content_url}/about/rotate-about/rotate.php") no-repeat; }
   #aboutCatapult { background: url("@{content_url}/catapult/catapult-header.jpg") no-repeat; }
+  #biologicsHeader { background: url("@{content_url}/biologics/biologics-home-header.png") no-repeat top right; }
+  
+  /* Careers Headers */
+  #careersHeader { padding: 0;height: 200px;width: 100%; position: relative; text-shadow: none; .no-shadow; border: none; }
+  #careersHeader h1, #careersHeader #techHeaderBlurb { color: @charcoal; }
+  #careersHeader.careersHeader-managment { background: url("@{content_url}/careers/careers-managment.png") no-repeat top right;}
+  #careersHeader.careersHeader-all { background: url("@{content_url}/careers/careers-all.png") no-repeat top right;}
+  #careersHeader.careersHeader-science { background: url("@{content_url}/careers/careers-science.png") no-repeat top right;}
+  #careersHeader.careersHeader-admin { background: url("@{content_url}/careers/careers-admin.png") no-repeat top right;}
+  #careersHeader.careersHeader-health { background: url("@{content_url}/careers/careers-health.png") no-repeat top right;}
+  #careersHeader.careersHeader-hr { background: url("@{content_url}/careers/careers-hr.png") no-repeat top right;}
+  #careersHeader.careersHeader-it { background: url("@{content_url}/careers/careers-it.png") no-repeat top right;}
+  #careersHeader.careersHeader-marketing { background: url("@{content_url}/careers/careers-marketing.png") no-repeat top right;}
+  #careersHeader.careersHeader-home { background: url("@{content_url}/careers/careers-home-header.png") no-repeat top right;}
+
 
   #techHeaderTitle {position: absolute;top: 20px;left: 30px;font-size: 50px;color: @white;}
   #techHeaderBlurb {position: absolute;top: 100px;left: 30px;font-size: 20px;color: @white;width: 50%;}
@@ -622,10 +631,8 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
 
 /* Future Campaign */
 
-.future-header { height: 368px; margin-bottom: 30px; overflow: hidden; position: relative; }
-.future-header-small { height: 271px; }
-.future-header h1 { position:relative;z-index: 20;color: @white; font-weight: 600; line-height: 55px; margin-top: 40px; font-size: 40px; text-shadow: 0px 0px 1px @charcoal;filter: dropshadow(color=@charcoal, offx=0, offy=0); }
-.future-header-small h1 { margin-top: 25px; }
+.future-header { height: 271; margin-bottom: 60px; overflow: hidden; position: relative; }
+.future-header h1 { position:relative;z-index: 20;color: @white; font-weight: 400; line-height: 55px; margin-top: 20px; font-size: 40px; text-shadow: 0px 0px 1px @charcoal;filter: dropshadow(color=@charcoal, offx=0, offy=0); }
 .future-header p { position:relative;z-index: 20;width: 300px;margin-bottom: 15px; font-weight: bold; color: @white; text-shadow: 0px 0px 1px @charcoal;filter: dropshadow(color=@charcoal, offx=0, offy=0);}
 .future-all-markets { position: absolute; top: 40px; right: 10px; z-index: 100;}
 .future-all-markets a { color: @white; text-shadow: 0px 0px 1px @charcoal; filter: dropshadow(color=@charcoal, offx=0, offy=0); background: url("@{base_url}/caption-bg.png") repeat; padding: 8px 10px; -webkit-border-radius: 5px;-moz-border-radius:5px;border-radius: 5px;}
@@ -639,25 +646,15 @@ width: 100%;height: 11px;content: "";display: block;position: absolute;z-index: 
   
 #big-event .future-header p { width: 500px;}  
   
-#future-header-hand { position: absolute; left: 60%; bottom: -40%; margin-left: -190px; -webkit-animation-name: FadeIn; -webkit-animation-timing-function: ease; -webkit-animation-duration: 1s; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -webkit-animation-name: movinghand; -webkit-animation-duration: 0.5; }
-
-#future-header-view { position: absolute; left: 60%; bottom: -40%; margin-left: -190px; -webkit-animation-name: FadeIn; -webkit-animation-timing-function: ease; -webkit-animation-duration: 1s; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -webkit-animation-name: movingview; -webkit-animation-duration: 0.5; }
 		
-@-webkit-keyframes movinghand {
-from {-webkit-transform: rotate(-10deg);bottom: -52%;}
-to {-webkit-transform: rotate(0deg);bottom: -40%;}}
-
-@-webkit-keyframes movingview {
-from {-webkit-transform: scale(0.95);bottom: -52%;}
-to {-webkit-transform: scale(1);bottom: -40%;}}
 
 		/* Future aviation header */
 .page-template-future-aerospace-php {background: url("@{content_url}/future/header-aviation.jpg") top center no-repeat;}
 
 
-.page-template-future-aerospace-php .future-header h1, .page-template-future-automotive-php h1, .page-template-future-automotive-php p, .page-template-future-aerospace-php .future-header p, 
+.page-template-future-aerospace-php .future-header h1, .page-template-future-aerospace-php .future-header p, 
 .page-template-future-cities-retail-php .future-header h1, .page-template-future-cities-retail-php .future-header p,
-.future-landing h1, .future-landing p,
+.future-landing h1, .future-landing p
 { color: @charcoal; text-shadow: none;}
 
 
@@ -738,9 +735,6 @@ color:@white;background-color:#648A94;background-image:-moz-linear-gradient(top,
 .future-feature img {float: left; margin-right: 20px;}
 .future-image-flow { width: 100%; height:auto; float: left;}
 .future-image-flow img {margin: 0; padding: 0;}
-.future-contact { margin-bottom: 100px; border-bottom: 2px solid @blue_gray; position: relative; height: 40px; width: 100%; float: left; }
-.future-contact-btn { position: absolute; background: @white; padding: 5px; right: 340px; }
-.future-large { font-size: 40px;}
 #disqus_thread { width: 80%; margin: 0 auto; }
 
 .closed-loop { position: absolute; top:55px; left:180px;}
@@ -798,15 +792,14 @@ px      68    160    252    344    436    528    620    712    */
 
 .home {background: none; }
 .square-slider .slide .content {margin: 0 auto; left: 130px;}
+header {margin-bottom: 0px;} 
 
-   .future-header { height: 298px; }
-   .future-header-small { height: 201px; }
-   .future-header-small h1 {margin-top: 0;}
+   .future-header { height: 201px; }
+   .future-header h1 {margin-top: 13px; font-size: 30px;}
    #future-header-hand { position: absolute; left: 60%; bottom: -70%; margin-left: -190px; }
    .future-nav { width: 120px; padding: 0 29px;}
    .closed-loop { position: absolute; top:144px; left:124px;}
    .future-feature { width: 324px; }
-   .future-contact-btn { right: 215px; }
    .intro, .closed-loop, #city-map-box, .future-all-markets { display: none; }
    .future-projects img { width: 98px; margin-right: 10px;}
    .future-share {float: right; margin-top: -45px; }
@@ -819,7 +812,7 @@ px      68    160    252    344    436    528    620    712    */
 
 /* --- reset widths for screen sizes -- */
 
-.cpibox {width:712px; padding:0px 28px 60px;}
+.cpibox {width:712px; padding:0px 28px 20px;}
 
 @bodr_box_width: 305px;
 @no_bodr_box_width: 344px;
@@ -831,7 +824,7 @@ section { width: @bodr_box_width; }
 section:nth-of-type(3n+2) { margin-right: 0; margin-left: 0; }
 section:nth-of-type(2n) { margin-left: 18px;} 
 
-#logo {float:left; margin: 0 8px 15px;}
+#logo {float:left; margin: 0 8px 0px;}
 #searchBox { padding-right: 5px; }
 #searchBox input[type=text] { width:90px; margin-left: 0;margin-right: 5px; }
 #searchBox button {
@@ -841,7 +834,7 @@ section:nth-of-type(2n) { margin-left: 18px;}
 
 
 
-header { height:150px; }
+header { height:135px; }
 header nav ul { width:100%; float:left; }
 header nav ul li a { font-size:14px; padding:6px 9px 7px 8px; }
 
@@ -872,7 +865,8 @@ aside .zz-link-box { width:180px; height: 150px;}
 #post-sidebar, #page-full #page  { width: 672px; }
 #page-full { margin-left: 0; }
 #page .list-box {width: 190px;}
-
+#page .fact-list{float:left; margin:0; width: 100%;}
+#page .biologics-box { float:left; width:100%; }
 
 .tech-into { height: 394px; }
 #careerPallet { width: auto;height: auto;margin: 30px; }
@@ -893,6 +887,7 @@ aside .zz-link-box { width:180px; height: 150px;}
 .news-item p, .news-item ul {
 	width: 100%;
 }
+
 
 }
 
@@ -919,16 +914,18 @@ px      68    160    252    */
   .future-header h1, .future-header p { color: @charcoal; text-shadow: none; text-align: center; margin: 0 auto;}
   #big-event .future-header p { width: 300px;}
   .future-header { height: auto; margin-top: 40px;}
-  .future-section { width: auto; }
+  .future-section { width: 100%; }
   .future-feature { width: auto; text-align: center; }
   .future-nav { width:106px; padding: 0 15px;}
-  .future-contact-btn { right: 0; }
   .page-template-future-cities-php .future-header h1, .page-template-future-cities-php .future-header p { color: @charcoal; }
-  .intro, .closed-loop, #city-map-box, .future-all-markets, #future-header-view { display: none; }
+  .intro, .closed-loop, #city-map-box, .future-all-markets { display: none; }
   .future-projects img { width: 73px; margin-right: 0; padding: 0 7px 10px 0 }
   .future-share { float: none; margin: 0 auto;}
   
   .cpibox { width:272px; padding:10px 0 60px;}
+  
+  .department {width: 85%; margin-left: 20px;}
+  .department img {margin-bottom: 30px;}
 
   @bodr_box_width: 230px;
   @no_bodr_box_width: 272px;
@@ -991,6 +988,8 @@ px      68    160    252    */
   #page .list-box {width: 190px;}
   .list-box:nth-of-type(3n+2) { margin-right: 0; margin-left: 0; }
   
+  #page .biologics-box { float:left; width:100%; }
+  
 #petecHeader {width: @no_bodr_box_width;}
 
   #contact-sidebar { width: @no_bodr_box_width; height: 300px; margin-left: 0px; border-left: 0px; float: left; }
@@ -1024,7 +1023,7 @@ px      68    160    252    */
 
   .news-item p, .news-item ul {width: 100%;}
   
-   #press-sidebar, .hide-now, .square-slider-contain {display: none;}
+   #press-sidebar, .hide-now, #myCarousel {display: none;}
 
 }
 
@@ -1040,7 +1039,6 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {	
 	
-.future-contact-btn{ right: 80px; }
 .future-nav { width: 79px; padding: 0 15px;}
 .future-img { margin-left: 48px;}
 .future-projects img { width: 120px; margin-right: 0; padding: 0 7px }
@@ -1098,5 +1096,7 @@ aside .zz-link-box { width: @bodr_box_width; }
   .location img { height: auto; }
 
 .b-bottom, .b-right, .b-top , .b-left, .categories {border:none;}
+
+.department {width: 100%;}
 
 }

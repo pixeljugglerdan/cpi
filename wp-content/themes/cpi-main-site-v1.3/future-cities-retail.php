@@ -18,7 +18,7 @@ get_header(); ?>
 <div class="future-header future-header-small">
 	<h1 class="fadein">Sustainable Retail</h1>
 	<p class="fadein">Retail centres built to reduce waste and generate power.</p>
-	<a data-toggle="modal" href="#newsModal" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
+	<a target="_blank"  href="<?php bloginfo('url'); ?>/cpi-newsletter/" class="btn btn-large btn-future fadein hide"><i class="icon-envelope"></i> Receive email updates</a>
 	
 	<?php include 'reuse/future/future-share.php'; ?>
 	
@@ -147,5 +147,4 @@ Stores will stock bio derived products such as pharmaceutical and personal care 
 
     	
 </div>   
-	<?php include 'newsletter.php'; ?>
 	<?php get_footer(); ?>

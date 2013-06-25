@@ -3,7 +3,7 @@
 </section>
 
 <section class="gap zz-link-box virtual-box-pe virtual-tour hide-now">
-    <a href="<?php bloginfo('url'); ?>/printable-electronics/facilities/"><h2>Virtual Tour</h2></a>
+    <a href="<?php bloginfo('url'); ?>/printable-electronics/facilities/"><h2>Virtual Tour & Video</h2></a>
 </section>
 
 <?php if (! is_page( 'printable-electronics' )) { ?>

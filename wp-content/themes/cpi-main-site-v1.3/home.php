@@ -5,77 +5,81 @@
 
 get_header(); ?>
 
-<script type="text/javascript">
-mixpanel.track("Visited Home Page");
-</script>
 
-      
 
-<!-- Show if on Tablet or PC -->
-<div class="square-slider-contain">
 
-<div class="square-slider">
-    <div class="slide slide1">
-        <div class="content light">
-            <div class="home-header">
-			<div id="homeDescription">
-				<h1>The Centre for <br/>Process Innovation</h1>
-				<p>CPI helps companies to prove and scale up processes to manufacture new products and create more sustainable, efficient and economic industries of the future.
-				</p> 
-			<a class="home-link" href="<?php bloginfo('url'); ?>/about/">More about CPI ››</a>
-			</div>
-			</div>        
-		</div>
-    </div>
-    
-    <div class="slide slide4">
-        <div class="content light">
-            <div class="home-header">
-			<div id="homeDescription">
-				<h1>Sustainable Cities of the future...</h1>
-				<p>View CPI’s vision of future cities and the steps we are making to achieve sustainable living through technology and innovation.
-				</p>
-				<a class="home-link" href="<?php bloginfo('url'); ?>/sustainable-cities/">Explore our city ››</a>
-			</div>
-			</div>    
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="item active slide1">
+          <div class="cpibox">
+          <div class="container">
+            <div class="carousel-caption">
+              	
+              	<div class="home-header">
+				<div id="homeDescription">
+					<h1>The Centre for <br/>Process Innovation</h1>
+					<p>CPI helps companies to prove and scale up processes to manufacture new products and create more sustainable, efficient and economic industries of the future.
+					</p> 
+					<a class="home-link" href="<?php bloginfo('url'); ?>/about/">More about CPI ››</a>
+				</div>
+				</div> 
+
+            </div>
+          </div>
+          </div>
         </div>
-    </div>
-    
-    <div class="slide slide2">
-		<div class="content light">
-            <div class="home-header">
-			<div id="homeDescription">
-				
-				<a href="<?php bloginfo('url'); ?>/about/high-value-manufacturing-catapult/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/home/catapult.png" alt="catapult" width="260" height="82" class="asset" /></a>
+        
+        <div class="item slide2">
+          <div class="cpibox">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              
+              	<div class="home-header">
+			  	<div id="homeDescription">
+					<a href="<?php bloginfo('url'); ?>/about/high-value-manufacturing-catapult/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/home/catapult.png" alt="catapult" width="260" height="82" class="asset" /></a>
 
 				<p>CPI is the process industry element of the government’s elite network of Catapult centres. 
 				</p>
 				<a class="home-link" href="<?php bloginfo('url'); ?>/about/high-value-manufacturing-catapult/">Read more ››</a>
-				
+			  	</div>
+			  	</div>
+              
+              
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="item slide3">
+          <div class="cpibox">
+          <div class="container">
+            <div class="carousel-caption">
+            
+            
+              	<div class="home-header">
+				<div id="homeDescription">
+					<h1>Did You Know?</h1>
+					<p>To date we have successfully completed over 200 public and private projects with a value in excess of £298m. 80% of these projects were for SMEs.
+					</p>
+					<a class="home-link" href="<?php bloginfo('url'); ?>/about/cpi-facts-and-figures/">More CPI facts ››</a>
 				</div>
-			</div>    
+				</div>
+
+            </div>
+          </div>
+          </div>
         </div>
-    </div>
-    
-    <div class="slide slide3">
-        <div class="content light">
-            <div class="home-header">
-			<div id="homeDescription">
-				<h1>Did You Know?</h1>
-				<p>To date we have successfully completed over 200 public and private projects with a value in excess of £298m. 80% of these projects were for SMEs.
-				</p>
-				<a class="home-link" href="<?php bloginfo('url'); ?>/about/cpi-facts-and-figures/">More CPI facts ››</a>
-			</div>
-			</div>    
-        </div>
-    </div>
+       
+        
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
 
 
-</div>
-
-    <a href="#" id="prev1" class="prev">Prev</a>
-    <a href="#" id="next1" class="next">Next</a>
-</div>     
+     
 
 <div class="cpibox">
 <div id="homePage" class="homePage">
@@ -88,9 +92,10 @@ mixpanel.track("Visited Home Page");
 				</p> 
 			<a class="home-link home-link-slider" href="<?php bloginfo('url'); ?>/about/">More about CPI ››</a>
 
-</div> 
+</div>
 
-    	<!-- 1st Tier -->
+
+<!-- 1st Tier -->
     	<section class="gap zz-img-list-box">
     	    <h2>Technologies</h2>
     		<ul>
@@ -103,17 +108,16 @@ mixpanel.track("Visited Home Page");
     		</ul>
     	</section>
     	
-    	<section class="gap zz-img-list-box">	
+    	<section class="gap zz-list-box">	
     		<h2>Markets</h2>
     		<a class="all" href="<?php bloginfo('url'); ?>/markets">View all &#187;</a>
     		<ul>
-    		<li class="personal-icon-small"><a href="<?php bloginfo('url'); ?>/markets/personal-care/">Personal Care</a></li>
-    		<li class="energy-icon-small"><a href="<?php bloginfo('url'); ?>/markets/energy-lighting/">Energy & Lighting</a></li>    		
-    		<li class="aeospace-icon-small"><a href="<?php bloginfo('url'); ?>/markets/aerospace/">Aerospace</a></li>
-    		<li class="chemicals-icon-small"><a href="<?php bloginfo('url'); ?>/markets/speciality-chemicals/">Speciality Chemicals</a></li>
-    		<li class="automotive-icon-small"><a href="<?php bloginfo('url'); ?>/markets/automotive/">Automotive</a></li>
-    		<li class="materials-icon-small"><a href="<?php bloginfo('url'); ?>/markets/materials/">Materials</a></li>
-    		<li class="pharam-icon-small"><a href="<?php bloginfo('url'); ?>/markets/pharmaceuticals/">Pharmaceuticals</a></li>
+    		<li><a href="<?php bloginfo('url'); ?>/markets/personal-care/">Personal Care</a></li>
+    		<li><a href="<?php bloginfo('url'); ?>/markets/energy/">Energy</a></li>    		
+    		<li><a href="<?php bloginfo('url'); ?>/markets/aerospace-defence-security/">Aerospace, Defence & Security</a></li>
+    		<li><a href="<?php bloginfo('url'); ?>/markets/automotive-transport/">Automotive & Transport</a></li>
+    		<li><a href="<?php bloginfo('url'); ?>/markets/materials-chemicals/">Materials & Chemicals</a></li>
+    		<li><a href="<?php bloginfo('url'); ?>/markets/pharmaceuticals/">Pharmaceuticals</a></li>
     		</ul>
     	</section>
     	
@@ -131,8 +135,7 @@ mixpanel.track("Visited Home Page");
     	</section>    	
 
 
-		<!-- 2nd Tier -->
-		
+<!-- 2nd Tier -->	
 		<section class="gap zz-recent-news-box">
        		<h2>Recent news</h2>
        		<a class="all" href="<?php bloginfo('url'); ?>/news">View all &#187;</a>
@@ -163,7 +166,6 @@ mixpanel.track("Visited Home Page");
 			<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
   			the_post_thumbnail( 'single-thumb', array('class' => 'alignleft')); } ?></a>
 			<strong><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo ShortenText(get_the_title()); ?></a></strong></br>
-			<?php dynamic_excerpt(55); ?>
 
 			</div>
 				
@@ -172,53 +174,50 @@ mixpanel.track("Visited Home Page");
 
 
 		<section class="gap zz-recent-news-box">
-       		<h2>Events</h2>
+       		<h2>Upcoming Events</h2>
        		<a class="all" href="<?php bloginfo('url'); ?>/events">View all &#187;</a>
     		<?php
-			$news = new WP_Query(array('showposts' => '2', 'post_type' => 'events'));
+			$news = new WP_Query(array('showposts' => '2', 'post_type' => 'tribe_events'));
 			while ($news->have_posts()) : $news->the_post();
 			?>
-			
-			<?php setup_postdata($post); 
-    $custom = get_post_custom(get_the_ID());
-    $sd = $custom["wpcf-event-start-date"][0];
-   
-    $longdate = date("D jS, M, Y", $sd);
-    ?>
+		
 			
 			<div class="recent-news-item">
 			<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
   			the_post_thumbnail( 'single-thumb', array('class' => 'alignleft')); } ?></a>
-  			<strong>On <?php echo $longdate ; ?></strong></br>
+  			
+  			<?php if ( tribe_is_new_event_day() && !tribe_is_day() && !tribe_is_multiday() ) : ?>
+				<strong><?php echo tribe_get_start_date( null, false ); ?></strong>
+			<?php endif; ?>
+			<?php if( !tribe_is_day() && tribe_is_multiday() ) : ?>
+				<strong><?php echo tribe_get_start_date( null, false ); ?> – <?php echo tribe_get_end_date( null, false ); ?></strong>
+			<?php endif; ?>
+			<?php if ( tribe_is_day() && $first ) : $first = false; ?>
+				<strong><?php echo tribe_event_format_date(strtotime(get_query_var('eventDate')), false); ?></strong>
+			<?php endif; ?>
+  			</br>
+  			
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo ShortenText(get_the_title()); ?></a>
 			</div>
 				
 			<?php endwhile; wp_reset_query(); ?>
        	</section>
-
-
-		<!-- 3rd Tier -->
+<!-- 3rd Tier -->
     	
     	
-<div id="slideNow">
-    		
-    	<ul id="slide2">
-    	<li>
+
     		<section class="gap zz-link-box careers-ad">
     			<a href="<?php bloginfo('url'); ?>/careers/"><h2>Careers</h2></a>
     		</section>
        	
-			<section class="gap zz-link-box sustainable-cities-bg">
-       			<a href="<?php bloginfo('url'); ?>/sustainable-cities/"><h2>Sustainable Cities</h2></a>
+			<section class="gap zz-link-box automotive-bg">
+       			<a href="<?php bloginfo('url'); ?>/the-future-of-automotive/"><h2>The future of automotive</h2></a>
        		</section>
        		
        		<section class="gap zz-link-box catapult">
     			<a href="<?php bloginfo('url'); ?>/about/high-value-manufacturing-catapult/"><h2>High Value Manufacturing</h2></a>
     		</section>          	
-		</li>
-		
-		
-		<li>
+
     	    <!--
     	    <section class="gap zz-link-box innovation-gap">
     			<a href="<?php bloginfo('url'); ?>/about/the-innovation-phase/"><h2>Bridging the innovation gap</h2></a>
@@ -232,18 +231,13 @@ mixpanel.track("Visited Home Page");
        			<a href="<?php bloginfo('url'); ?>/about/values/"><h2>Our values</h2></a>
        		</section>
        	
-			<section class="gap zz-link-box polyphotonix">
-       			<a href="<?php bloginfo('url'); ?>/case-studies/polyphotonix/"><h2>Client focus</h2></a>
+			<section class="gap zz-link-box peratech">
+       			<a href="<?php bloginfo('url'); ?>/case-studies/peratech/"><h2>Client focus</h2></a>
        		</section>          	
-		</li>
-		</ul>
-		
-		<a href="#" id="prev2" class="prev"><i class="icon-chevron-left"></i></a>
-		<a href="#" id="next2" class="next"><i class="icon-chevron-right"></i></a>
-		
-</div>
-    	
-</div>   
 
+
+    
+        	
+</div>   
 	<?php get_footer(); ?>
 	

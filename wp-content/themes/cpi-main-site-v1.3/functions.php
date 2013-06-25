@@ -773,7 +773,7 @@ function populate_dropdown($form){
 }
 
 
-// Gravity forms tender drop down
+// Gravity forms job drop down
 add_filter("gform_pre_render", "populate_job_dropdown");
 
 //Note: when changing drop down values, we also need to use the gform_admin_pre_render so that the right values are displayed when editing the entry.
@@ -781,8 +781,8 @@ add_filter("gform_admin_pre_render", "populate_job_dropdown");
 
 function populate_job_dropdown($form){
 
-    //Only populating drop down for form id 1
-    if($form["id"] != 9)
+    //Only populating drop down for form id 5
+    if($form["id"] != 5)
        return $form;
 	
 	//Argument for custom post type tenders
@@ -803,7 +803,7 @@ function populate_job_dropdown($form){
 
     //Adding items to field id 1. Replace 1 with your actual field id. You can get the field id by looking at the input name in the markup.
     foreach($form["fields"] as &$field)
-        if($field["id"] == 1){            
+        if($field["id"] == 3){            
             $field["choices"] = $items;
         }
 

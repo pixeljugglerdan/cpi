@@ -13,13 +13,13 @@ get_header(); ?>
 		<div class="" id="markets">
 
 		<div class="menu-box b-bottom b-right mark-top">
-				<a href="<?php bloginfo('url'); ?>/markets/aerospace-and-defence/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/aerospace-defence.jpg" alt="Aerospace & Defence" width="285" height="90" />
-		<h2 class="marketHeader">Aerospace & Defence</h2></a>
+				<a href="<?php bloginfo('url'); ?>/markets/aerospace-defence-security/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/aerospace-defence.jpg" alt="Aerospace & Defence" width="285" height="90" />
+		<h2 class="marketHeader">Aerospace, Defence & Security</h2></a>
 		</div>
 		
 		<div class="menu-box b-bottom b-right mark-top">
-		<a href="<?php bloginfo('url'); ?>/markets/automotive/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/automotive.jpg" alt="Automotive" width="285" height="90" />
-		<h2 class="marketHeader">Automotive</h2></a>
+		<a href="<?php bloginfo('url'); ?>/markets/automotive-transport/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/automotive.jpg" alt="Automotive" width="285" height="90" />
+		<h2 class="marketHeader">Automotive & Transport</h2></a>
 		</div>
 		
 		<div class="menu-box b-bottom no-margin">
@@ -28,13 +28,13 @@ get_header(); ?>
 		</div>
 		
 		<div class="menu-box b-bottom b-right">
-						<a href="<?php bloginfo('url'); ?>/markets/consumer-products/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/consumer-products.jpg" alt="consumer-products" width="285" height="90" />
-		<h2 class="marketHeader">Consumer Products</h2></a>
+						<a href="<?php bloginfo('url'); ?>/markets/retail-consumer-goods/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/consumer-products.jpg" alt="consumer-products" width="285" height="90" />
+		<h2 class="marketHeader">Retail & Consumer Goods</h2></a>
 		</div>
 		
 		<div class="menu-box b-bottom b-right">
-		<a href="<?php bloginfo('url'); ?>/markets/energy-lighting/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/energy-lighting.jpg" alt="lighting" width="285" height="90" />
-		<h2 class="marketHeader">Energy and Lighting</h2></a>
+		<a href="<?php bloginfo('url'); ?>/markets/energy/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/energy-lighting.jpg" alt="lighting" width="285" height="90" />
+		<h2 class="marketHeader">Energy</h2></a>
 		</div>
 		
 		<div class="menu-box b-bottom">
@@ -44,8 +44,9 @@ get_header(); ?>
 		
 		
 		<div class="menu-box b-bottom b-right">
-			<a href="<?php bloginfo('url'); ?>/markets/materials/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/materials.jpg" alt="electronics" width="285" height="90" />
-			<h2 class="marketHeader">Materials</h2></a>
+			<a href="<?php bloginfo('url'); ?>/markets/materials-chemicals/">
+			<img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/speciality-chemicals.jpg" alt="speciality-chemicals" width="285" height="90" />
+			<h2 class="marketHeader">Materials & Chemicals</h2></a>
 		</div>
 		
 		
@@ -62,20 +63,20 @@ get_header(); ?>
 		
 		
 		<div class="menu-box b-right">
-			<a href="<?php bloginfo('url'); ?>/markets/printable-electronics-market/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/small-substrate.jpg" alt="printable electronics" width="285" height="90" />
-			<h2 class="marketHeader">Printable Electronics</h2></a>
+			<a href="<?php bloginfo('url'); ?>/markets/electronics-it/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/small-substrate.jpg" alt="printable electronics" width="285" height="90" />
+			<h2 class="marketHeader">Electronics & IT</h2></a>
 		</div>
 		
 		
 		
 		<div class="menu-box b-right mark-bott">
-		<a href="<?php bloginfo('url'); ?>/markets/speciality-chemicals/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/speciality-chemicals.jpg" alt="speciality-chemicals" width="285" height="90" />
-		<h2 class="marketHeader">Speciality Chemicals</h2></a>
+		<a href="#"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/materials.jpg" alt="electronics" width="285" height="90" />
+		<h2 class="marketHeader">Healthcare & Lifesciences</h2></a>
 		</div>
 		
 		<div class="menu-box mark-bott">
-		<a href="<?php bloginfo('url'); ?>/markets/waste/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/waste.jpg" alt="waste" width="285" height="90" />
-		<h2 class="marketHeader">Waste</h2></a>
+		<a href="<?php bloginfo('url'); ?>/markets/environment-water/"><img src="<?php bloginfo( 'template_url' ); ?>/-/images/content/markets/waste.jpg" alt="waste" width="285" height="90" />
+		<h2 class="marketHeader">Environment & Water</h2></a>
 		</div>
 		
 		</div>
